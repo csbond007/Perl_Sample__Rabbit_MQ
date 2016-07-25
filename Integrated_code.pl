@@ -11,8 +11,8 @@ use JSON qw( );
 ## S3 Initialization
 use Amazon::S3;
 
-my $aws_access_key_id     = "AKIAIF3EE5PWXPXOASZQ";
-my $aws_secret_access_key = "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";
+my $aws_access_key_id     = "";
+my $aws_secret_access_key = "";
 
 my $s3 = Amazon::S3->new(
     {   aws_access_key_id     => $aws_access_key_id,
