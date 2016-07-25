@@ -31,7 +31,7 @@ $db->write(
         {
             measurement => 'Alerts',
             tags => {
-		From    => '@gmail.com',
+		From    => '',
 		To      => '',
                 Subject => 'Back_Up_Failed',
             },
