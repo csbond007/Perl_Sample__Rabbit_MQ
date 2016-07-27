@@ -2,52 +2,55 @@
 package RabbitMQ_Receive;
 use strict;
 use warnings;
-use 5.010;
 use Net::RabbitFoot;
 use AnyEvent;
-$|++; 
+$|++;
 
 use InfluxDB_Operations qw(write);
 use AWS qw(put_S3);
 
 use base 'Exporter';
 
-our@ EXPORT_OK = qw(receive);
+our @EXPORT_OK = qw(receive);
 
 sub receive {
 
-		my $conn = Net::RabbitFoot->new()->load_xml_spec()->connect(
-									    host => 'localhost',
-    									    port => 5672,
-    									    user => 'guest',
-    									    pass => 'guest',
-    									    vhost => '/',
-									   );
+    my $conn = Net::RabbitFoot->new()->load_xml_spec()->connect(
+        host  => 'localhost',
+        port  => 5672,
+        user  => 'guest',
+        pass  => 'guest',
+        vhost => '/',
+    );
 
-		my $ch = $conn->open_channel();
-    
-		$ch->declare_queue(
-    				    queue => 'hello1',
-    				    durable => 1, 
-				  );
+    my $ch = $conn->open_channel();
 
-		print " [*] Waiting for messages. To exit press CTRL-C\n";
+    $ch->declare_queue(
+        queue   => 'hello1',
+        durable => 1,
+    );
 
-		sub callback {
-    				my $var = shift;
-			        my $body = $var->{body}->{payload};
-    				print " [x] Received \n"; # $body \n";
-    				write($body);
-    				put_S3($body);
-			     }
+    print " [*] Waiting for messages. To exit press CTRL-C\n";
 
-		$ch->consume(
-			    on_consume => \&callback,
-    			    no_ack => 1,
-			    );
+    sub callback {
+        my $var  = shift;
+        my $body = $var->{body}->{payload};
+        print " [x] Received \n";    # $body \n";
+        
+        #Write the records into InfluxDB
+        write($body);
+ 	
+	#Write the files into AWS-S3 buckets
+        put_S3($body);
+    }
 
-		# Wait forever
-		AnyEvent->condvar->recv;
+    $ch->consume(
+        on_consume => \&callback,
+        no_ack     => 1,
+    );
 
-		} # end receive
+    AnyEvent->condvar->recv;
+
+}  # end receive
+
 
