@@ -7,6 +7,7 @@ use InfluxDB;
 use AnyEvent::InfluxDB;
 use JSON qw( );
 
+use Json_Parser qw(json_parsing);
 
 use base 'Exporter';
 
@@ -14,53 +15,54 @@ our@ EXPORT_OK = qw(write);
 
 
 sub write {
-print "i am write" ;
-my ($json_text) = @_;
 
-my $db = AnyEvent::InfluxDB->new(
-    server => 'http://localhost:8086',
-);
+	my ($json_text) = @_;
 
-my $json = JSON->new;
-my $data = $json->decode($json_text);
+	my $db = AnyEvent::InfluxDB->new(server => 'http://localhost:8086',);
 
-my $cv = AE::cv;
+	my @email_msg = json_parsing($json_text);
 
-for ( @{$data->{alerts}} )
-  {
-        $cv = AE::cv;
+	 my $cv = AE::cv;
+ 	while (@email_msg) {
 
-        my $From = $_->{From} ;
-        my $To = $_->{To} ;
-        my $Subject = $_->{Subject} ;
-        my $Size = $_->{Size} ;
+        	my $Size = pop @email_msg;
+        	my $Id = pop @email_msg;
+        	my $Subject = pop @email_msg;
+        	my $To = pop @email_msg;
+        	my $From = pop @email_msg;
 
-## Writing Data to InfluxDB
- $db->write(
-                database => 'Integrated_demo_3',
-                consistency => 'quorum',
+#		my $cv = AE::cv;
+        	$cv->begin ;
 
-                data => [
-                                {
-                                    measurement => 'Alerts',
+	 	$db->write(
+                	database => 'Integrated_demo_5',
+                	consistency => 'quorum',
+
+                	data => [
+                                  {
+                                    measurement => 'Alerts12',
                                            tags => {
-                                                    From    => $From,
-                                                    To      => $To,
-                                                    Subject => $Subject,
+                                                     From    => $From,
+                                                     To      => $To,
+                                                     Subject => $Subject,
+						     Id      => $Id,
                                                    },
                                          fields => {
-                                                    Size => $Size
+                                                     Size => $Size
                                                    },
                                  }
-                        ],
+                               ],
 
-                on_success => $cv,
-                on_error => sub {
-                                $cv->croak("Failed to write data: @_");
-                                }
-                ); # end-write
+                	on_success => $cv,
+                	on_error => sub {
+                                	$cv->croak("Failed to write data: @_");
+                                	}
+                	); # end-write
+	 	$cv->end;
+                $cv->wait;
+		sleep(1);
+        #	$cv->recv;
 
-        $cv->recv;
-  }  # end for 
-
-}
+        } # end-while
+$cv->recv;
+}  # end write 
