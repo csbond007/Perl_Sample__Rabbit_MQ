@@ -1,10 +1,16 @@
+#InfluxDB Configurations
 influxDBUrl: http://localhost:8086
 influxDBUserName: admin
 influxDBUserPassword: admin
+
+#AWS S3 
 awsAccessKeyId:
 awsSecretAccessKey:
+
+#RabbitMQ Connection Configurations
 rabbitMQHost: localhost
 rabbitMQport: 5672
 rabbitMQuser: guest
 rabbitMQpass: guest
+rabbitMQName: hello1
 
