@@ -1,0 +1,3 @@
+influxDBUrl: http://localhost:8086
+influxDBUserName: admin
+influxDBUserPassword: admin
