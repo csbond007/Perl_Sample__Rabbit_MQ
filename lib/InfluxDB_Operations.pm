@@ -46,7 +46,7 @@ sub write {
 
             data => [
                 {
-                    measurement => 'Alerts06',
+                    measurement => 'Alerts060',
                     tags        => {
                         From    => $From,
                         To      => $To,

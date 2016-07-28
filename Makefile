@@ -25,7 +25,7 @@
 
 # --- MakeMaker const_config section:
 
-# These definitions are from config.sh (via /usr/lib/perl/5.18/Config.pm).
+# These definitions are from config.sh (via /usr/lib/x86_64-linux-gnu/perl/5.20/Config.pm).
 # They may have been overridden via Makefile.PL or on the command line.
 AR = ar
 CC = cc
@@ -38,16 +38,16 @@ FULL_AR = /usr/bin/ar
 LD = cc
 LDDLFLAGS = -shared -L/usr/local/lib -fstack-protector
 LDFLAGS =  -fstack-protector -L/usr/local/lib
-LIBC = 
+LIBC = libc-2.21.so
 LIB_EXT = .a
 OBJ_EXT = .o
 OSNAME = linux
 OSVERS = 3.13.0-79-generic
 RANLIB = :
-SITELIBEXP = /usr/local/share/perl/5.18.2
-SITEARCHEXP = /usr/local/lib/perl/5.18.2
+SITELIBEXP = /usr/local/share/perl/5.20.2
+SITEARCHEXP = /usr/local/lib/x86_64-linux-gnu/perl/5.20.2
 SO = so
-VENDORARCHEXP = /usr/lib/perl5
+VENDORARCHEXP = /usr/lib/x86_64-linux-gnu/perl5/5.20
 VENDORLIBEXP = /usr/share/perl5
 
 
@@ -73,7 +73,7 @@ INST_MAN3DIR = blib/man3
 MAN1EXT = 1p
 MAN3EXT = 3pm
 INSTALLDIRS = site
-INSTALL_BASE = /home/kaustav/perl5
+INSTALL_BASE = /home/kaustavsaha/perl5
 DESTDIR = 
 PREFIX = $(INSTALL_BASE)
 INSTALLPRIVLIB = $(INSTALL_BASE)/lib/perl5
@@ -112,16 +112,16 @@ INSTALLSITEMAN3DIR = $(INSTALL_BASE)/man/man3
 DESTINSTALLSITEMAN3DIR = $(DESTDIR)$(INSTALLSITEMAN3DIR)
 INSTALLVENDORMAN3DIR = $(INSTALL_BASE)/man/man3
 DESTINSTALLVENDORMAN3DIR = $(DESTDIR)$(INSTALLVENDORMAN3DIR)
-PERL_LIB = /usr/share/perl/5.18
-PERL_ARCHLIB = /usr/lib/perl/5.18
-PERL_ARCHLIBDEP = /usr/lib/perl/5.18
+PERL_LIB = /usr/share/perl/5.20
+PERL_ARCHLIB = /usr/lib/x86_64-linux-gnu/perl/5.20
+PERL_ARCHLIBDEP = /usr/lib/x86_64-linux-gnu/perl/5.20
 LIBPERL_A = libperl.a
 FIRST_MAKEFILE = Makefile
 MAKEFILE_OLD = Makefile.old
 MAKE_APERL_FILE = Makefile.aperl
 PERLMAINCC = $(CC)
-PERL_INC = /usr/lib/perl/5.18/CORE
-PERL_INCDEP = /usr/lib/perl/5.18/CORE
+PERL_INC = /usr/lib/x86_64-linux-gnu/perl/5.20/CORE
+PERL_INCDEP = /usr/lib/x86_64-linux-gnu/perl/5.20/CORE
 PERL = "/usr/bin/perl"
 FULLPERL = "/usr/bin/perl"
 ABSPERL = $(PERL)
@@ -136,7 +136,7 @@ PERM_DIR = 755
 PERM_RW = 644
 PERM_RWX = 755
 
-MAKEMAKER   = /home/kaustav/perl5/lib/perl5/ExtUtils/MakeMaker.pm
+MAKEMAKER   = /home/kaustavsaha/perl5/lib/perl5/ExtUtils/MakeMaker.pm
 MM_VERSION  = 7.18
 MM_REVISION = 71800
 
@@ -184,7 +184,15 @@ PERL_ARCHIVEDEP    =
 PERL_ARCHIVE_AFTER = 
 
 
-TO_INST_PM = lib/EmailAlertsAnalyzer.pm
+TO_INST_PM = lib/AWS.pm \
+	lib/Config_Reader.pm \
+	lib/EmailAlertsAnalyzer.pm \
+	lib/InfluxDB_Operations.pm \
+	lib/Json_Parser.pm \
+	lib/RabbitMQ_Receive.pm \
+	lib/RabbitMQ_Send.pm \
+	lib/RabbitMQ_new_task.pm \
+	lib/RabbitMQ_worker.pm
 
 
 # --- MakeMaker platform_constants section:
@@ -489,7 +497,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) 'configure_requires:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  ExtUtils::MakeMaker: '\''0'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'dynamic_config: 1' >> META_new.yml
-	$(NOECHO) $(ECHO) 'generated_by: '\''ExtUtils::MakeMaker version 7.18, CPAN::Meta::Converter version 2.143240'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) 'generated_by: '\''ExtUtils::MakeMaker version 7.18, CPAN::Meta::Converter version 2.150005'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'license: unknown' >> META_new.yml
 	$(NOECHO) $(ECHO) 'meta-spec:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  url: http://module-build.sourceforge.net/META-spec-v1.4.html' >> META_new.yml
@@ -501,6 +509,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '    - inc' >> META_new.yml
 	$(NOECHO) $(ECHO) 'requires: {}' >> META_new.yml
 	$(NOECHO) $(ECHO) 'version: '\''0.01'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) 'x_serialization_backend: '\''CPAN::Meta::YAML version 0.012'\''' >> META_new.yml
 	-$(NOECHO) $(MV) META_new.yml $(DISTVNAME)/META.yml
 	$(NOECHO) $(ECHO) Generating META.json
 	$(NOECHO) $(ECHO) '{' > META_new.json
@@ -509,7 +518,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '      "Kaustav Saha <kaustav@>"' >> META_new.json
 	$(NOECHO) $(ECHO) '   ],' >> META_new.json
 	$(NOECHO) $(ECHO) '   "dynamic_config" : 1,' >> META_new.json
-	$(NOECHO) $(ECHO) '   "generated_by" : "ExtUtils::MakeMaker version 7.18, CPAN::Meta::Converter version 2.143240",' >> META_new.json
+	$(NOECHO) $(ECHO) '   "generated_by" : "ExtUtils::MakeMaker version 7.18, CPAN::Meta::Converter version 2.150005",' >> META_new.json
 	$(NOECHO) $(ECHO) '   "license" : [' >> META_new.json
 	$(NOECHO) $(ECHO) '      "unknown"' >> META_new.json
 	$(NOECHO) $(ECHO) '   ],' >> META_new.json
@@ -540,7 +549,8 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '      }' >> META_new.json
 	$(NOECHO) $(ECHO) '   },' >> META_new.json
 	$(NOECHO) $(ECHO) '   "release_status" : "stable",' >> META_new.json
-	$(NOECHO) $(ECHO) '   "version" : "0.01"' >> META_new.json
+	$(NOECHO) $(ECHO) '   "version" : "0.01",' >> META_new.json
+	$(NOECHO) $(ECHO) '   "x_serialization_backend" : "JSON::PP version 2.27300"' >> META_new.json
 	$(NOECHO) $(ECHO) '}' >> META_new.json
 	-$(NOECHO) $(MV) META_new.json $(DISTVNAME)/META.json
 
@@ -798,7 +808,7 @@ $(FIRST_MAKEFILE) : Makefile.PL $(CONFIGDEP)
 # --- MakeMaker makeaperl section ---
 MAP_TARGET    = perl
 FULLPERL      = "/usr/bin/perl"
-MAP_PERLINC   = "-Iblib/arch" "-Iblib/lib" "-I/usr/lib/perl/5.18" "-I/usr/share/perl/5.18"
+MAP_PERLINC   = "-Iblib/arch" "-Iblib/lib" "-I/usr/lib/x86_64-linux-gnu/perl/5.20" "-I/usr/share/perl/5.20"
 
 $(MAP_TARGET) :: $(MAKE_APERL_FILE)
 	$(MAKE) $(USEMAKEFILE) $(MAKE_APERL_FILE) $@
@@ -853,7 +863,7 @@ ppd :
 	$(NOECHO) $(ECHO) '    <ABSTRACT>Perl extension for blah blah blah</ABSTRACT>' >> EmailAlertsAnalyzer.ppd
 	$(NOECHO) $(ECHO) '    <AUTHOR>Kaustav Saha &lt;kaustav@&gt;</AUTHOR>' >> EmailAlertsAnalyzer.ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> EmailAlertsAnalyzer.ppd
-	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="x86_64-linux-gnu-thread-multi-5.18" />' >> EmailAlertsAnalyzer.ppd
+	$(NOECHO) $(ECHO) '        <ARCHITECTURE NAME="x86_64-linux-gnu-thread-multi-5.20" />' >> EmailAlertsAnalyzer.ppd
 	$(NOECHO) $(ECHO) '        <CODEBASE HREF="" />' >> EmailAlertsAnalyzer.ppd
 	$(NOECHO) $(ECHO) '    </IMPLEMENTATION>' >> EmailAlertsAnalyzer.ppd
 	$(NOECHO) $(ECHO) '</SOFTPKG>' >> EmailAlertsAnalyzer.ppd
@@ -863,7 +873,15 @@ ppd :
 
 pm_to_blib : $(FIRST_MAKEFILE) $(TO_INST_PM)
 	$(NOECHO) $(ABSPERLRUN) -MExtUtils::Install -e 'pm_to_blib({@ARGV}, '\''$(INST_LIB)/auto'\'', q[$(PM_FILTER)], '\''$(PERM_DIR)'\'')' -- \
-	  'lib/EmailAlertsAnalyzer.pm' 'blib/lib/EmailAlertsAnalyzer.pm' 
+	  'lib/AWS.pm' 'blib/lib/AWS.pm' \
+	  'lib/Config_Reader.pm' 'blib/lib/Config_Reader.pm' \
+	  'lib/EmailAlertsAnalyzer.pm' 'blib/lib/EmailAlertsAnalyzer.pm' \
+	  'lib/InfluxDB_Operations.pm' 'blib/lib/InfluxDB_Operations.pm' \
+	  'lib/Json_Parser.pm' 'blib/lib/Json_Parser.pm' \
+	  'lib/RabbitMQ_Receive.pm' 'blib/lib/RabbitMQ_Receive.pm' \
+	  'lib/RabbitMQ_Send.pm' 'blib/lib/RabbitMQ_Send.pm' \
+	  'lib/RabbitMQ_new_task.pm' 'blib/lib/RabbitMQ_new_task.pm' \
+	  'lib/RabbitMQ_worker.pm' 'blib/lib/RabbitMQ_worker.pm' 
 	$(NOECHO) $(TOUCH) pm_to_blib
 
 
