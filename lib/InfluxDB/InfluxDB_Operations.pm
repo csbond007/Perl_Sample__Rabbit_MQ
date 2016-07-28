@@ -41,12 +41,12 @@ sub write {
         $cv->begin;
 
         $db->write(
-            database    => 'Demo',
+            database    => getConfigValueByKey("influxDB_Name"),
             consistency => 'quorum',
 
             data => [
                 {
-                    measurement => 'Alerts060',
+                    measurement => getConfigValueByKey("influxDB_TableName"),
                     tags        => {
                         From    => $From,
                         To      => $To,

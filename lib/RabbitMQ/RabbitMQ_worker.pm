@@ -8,25 +8,26 @@ $|++;
 
 use InfluxDB_Operations qw(write);
 use AWS qw(put_S3);
+use Config_Reader qw(getConfigValueByKey);
 
 use base 'Exporter';
 
 our @EXPORT_OK = qw(worker);
 
 sub worker {
-
-    my $conn = Net::RabbitFoot->new()->load_xml_spec()->connect(
-							        host  => 'localhost',
-							        port  => 5672,
-							        user  => 'guest',
-							        pass  => 'guest',
+    
+   my $conn = Net::RabbitFoot->new()->load_xml_spec()->connect(
+ 								host  => getConfigValueByKey("rabbitMQHost"),
+							        port  => getConfigValueByKey("rabbitMQport"),
+							        user  => getConfigValueByKey("rabbitMQuser"),
+							        pass  => getConfigValueByKey("rabbitMQpass"),
 							        vhost => '/',
 							        );
 
     my $ch = $conn->open_channel();
 
     $ch->declare_queue(
-        		queue   => 'task_queue',
+        		queue   => getConfigValueByKey("rabbitMQName_worker"),
 		        durable => 1,
     		      );
 

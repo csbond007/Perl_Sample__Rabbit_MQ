@@ -43,7 +43,7 @@ sub receive {
         write($body);
  	
 	#Write the files into AWS-S3 buckets
-        #put_S3($body);
+        put_S3($body);
     }
 
     $ch->consume(
