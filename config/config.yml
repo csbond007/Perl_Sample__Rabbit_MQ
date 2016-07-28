@@ -6,8 +6,8 @@ influxDB_Name: Demo
 influxDB_TableName: Alerts77
 
 #AWS S3 
-awsAccessKeyId: AKIAIHMHKLL6ZIKUDFPA
-awsSecretAccessKey: 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
+awsAccessKeyId: 
+awsSecretAccessKey:
 
 #RabbitMQ Connection Configurations
 rabbitMQHost: localhost
