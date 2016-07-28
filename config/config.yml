@@ -1,3 +1,10 @@
 influxDBUrl: http://localhost:8086
 influxDBUserName: admin
 influxDBUserPassword: admin
+awsAccessKeyId:
+awsSecretAccessKey:
+rabbitMQHost: localhost
+rabbitMQport: 5672
+rabbitMQuser: guest
+rabbitMQpass: guest
+
