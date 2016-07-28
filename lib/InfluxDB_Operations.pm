@@ -5,6 +5,8 @@ use warnings;
 use InfluxDB;
 use AnyEvent::InfluxDB;
 use JSON qw( );
+use Config_Reader qw(getConfigValueByKey);
+
 
 use Json_Parser qw(json_parsing);
 
@@ -12,11 +14,17 @@ use base 'Exporter';
 
 our @EXPORT_OK = qw(write);
 
+
+
+
+
 sub write {
 
     my ($json_text) = @_;
+   
+    my $influxDBUrl = getConfigValueByKey("influxDBUrl");
 
-    my $db = AnyEvent::InfluxDB->new( server => 'http://localhost:8086', );
+    my $db = AnyEvent::InfluxDB->new( server => $influxDBUrl, );
 
     my @email_msg = json_parsing($json_text);
 
@@ -38,7 +46,7 @@ sub write {
 
             data => [
                 {
-                    measurement => 'Alerts4',
+                    measurement => 'Alerts06',
                     tags        => {
                         From    => $From,
                         To      => $To,

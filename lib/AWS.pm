@@ -2,11 +2,9 @@ package AWS;
 use strict;
 use warnings;
 
-use JSON qw( );
-
-## S3 Initialization
 use Amazon::S3;
-
+use JSON qw( );
+use Config_Reader qw(getConfigValueByKey);
 use Json_Parser qw(json_parsing);
 
 use base 'Exporter';
@@ -17,8 +15,8 @@ sub put_S3 {
 
     my ($json_text) = @_;
 
-    my $aws_access_key_id     = "";
-    my $aws_secret_access_key = "";
+    my $aws_access_key_id     = getConfigValueByKey("awsAccessKeyId");;
+    my $aws_secret_access_key = getConfigValueByKey("awsSecretAccessKey");;
 
     my $s3 = Amazon::S3->new(
         {
