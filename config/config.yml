@@ -3,11 +3,11 @@ influxDBUrl: http://localhost:8086
 influxDBUserName: admin
 influxDBUserPassword: admin
 influxDB_Name: Demo
-influxDB_TableName: Alerts77
+influxDB_TableName: Alerts_29_1
 
 #AWS S3 
-awsAccessKeyId: 
-awsSecretAccessKey:
+awsAccessKeyId: AKIAJWSBWQ6PBBWEV6FQ 
+awsSecretAccessKey: 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
 
 #RabbitMQ Connection Configurations
 rabbitMQHost: localhost
@@ -15,5 +15,5 @@ rabbitMQport: 5672
 rabbitMQuser: guest
 rabbitMQpass: guest
 rabbitMQName: hello1
-rabbitMQName_worker: task_queue1 
+rabbitMQName_worker: task_queue_29_1 
 
