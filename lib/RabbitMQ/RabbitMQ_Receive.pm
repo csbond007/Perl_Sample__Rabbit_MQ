@@ -7,6 +7,7 @@ use AnyEvent;
 $|++;
 
 use InfluxDB_Operations qw(write);
+use KairosDB_REST_Operations qw(addDataPoints);
 use Config_Reader qw(getConfigValueByKey);
 use AWS qw(put_S3);
 
@@ -41,9 +42,12 @@ sub receive {
         
         #Write the records into InfluxDB
         write($body);
+
+        #Write the records into KairosDB
+        addDataPoints($body);
  	
 	#Write the files into AWS-S3 buckets
-        put_S3($body);
+        #put_S3($body);
     }
 
     $ch->consume(
