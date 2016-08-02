@@ -1,7 +1,7 @@
 ---
-abstract: 'Perl extension for blah blah blah'
+abstract: 'Perl'
 author:
-  - 'Kaustav Saha <kaustav@>'
+  - 'ObjectFrontierInc'
 build_requires:
   ExtUtils::MakeMaker: '0'
 configure_requires:
