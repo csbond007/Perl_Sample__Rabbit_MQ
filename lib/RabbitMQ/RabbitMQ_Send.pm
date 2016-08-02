@@ -15,7 +15,7 @@ sub send {
 
 	    ### extracting json ###
 
-	    my $filename = './data/sample.json';
+	    my $filename = './data/emailAlerts.json';
 
 	    my $json_text = do {
 				   open(my $json_fh, "<:encoding(UTF-8)", $filename)
