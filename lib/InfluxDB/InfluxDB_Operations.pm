@@ -7,16 +7,11 @@ use AnyEvent::InfluxDB;
 use JSON qw( );
 use Config_Reader qw(getConfigValueByKey);
 
-
 use Json_Parser qw(json_parsing);
 
 use base 'Exporter';
 
 our @EXPORT_OK = qw(write);
-
-
-
-
 
 sub write {
 
@@ -61,7 +56,6 @@ sub write {
 
             on_success => $cv,
             on_error   => sub {
-                $cv->croak("Failed to write data: @_");
             }
         );    # end-write
         $cv->end;

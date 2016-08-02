@@ -11,13 +11,31 @@ my $cfgFile     = qq{$CONFIGFILE};
 my @cfgFileList = ($cfgFile);
 my $cfg = Config::Any->load_files( { files => \@cfgFileList, use_ext => 1 } );
 
-sub getConfigValueByKey {
-    my ($key) = @_;
-    my $value = $cfg->[0]{$cfgFile}{$key};
+use Log_Initializer qw(get_Logger);
 
-    if ( defined $value ) {
-        return $value;
-    }
+sub getConfigValueByKey {
+
+   my ($key) = @_;
+
+   if( defined $key)
+   {
+    my $value = $cfg->[0]{$cfgFile}{$key};
+     if ( defined $value ) 
+      {
+       get_Logger()->info("getConfigValueByKey(): $key -> $value");
+       return $value;
+      }
+     else
+      {
+	get_Logger()->error("getConfigValueByKey(): value is not present");
+      }
+
+   }
+   else
+   {
+    get_Logger()->error("getConfigValueByKey(): key is not present");
+   }
+
     return "";
 }
 
