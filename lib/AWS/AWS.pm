@@ -26,31 +26,34 @@ sub put_S3 {
         }
     );
 
-    my @email_msg = json_parsing($json_text);
+    if( defined $json_text) {
 
-    while (@email_msg) {
+	    my @email_msg = json_parsing($json_text);
 
-        my $Size    = pop @email_msg;
-        my $Id      = pop @email_msg;
-        my $Subject = pop @email_msg;
-        my $To      = pop @email_msg;
-        my $From    = pop @email_msg;
-        my $Formatted_msg =
-            $From . "\n"
-          . $To . "\n"
-          . $Subject . "\n"
-          . $Id . "\n"
-          . $Size . "\n";
+	    while (@email_msg) {
 
-        my $bucket_name = $Subject;
-        my $bucket = $s3->add_bucket( { bucket => $bucket_name } )
-          or die $s3->err . ": " . $s3->errstr;
+		my $Size    = pop @email_msg;
+		my $Id      = pop @email_msg;
+		my $Subject = pop @email_msg;
+		my $To      = pop @email_msg;
+		my $From    = pop @email_msg;
+		my $Formatted_msg =
+		    $From . "\n"
+		  . $To . "\n"
+		  . $Subject . "\n"
+		  . $Id . "\n"
+		  . $Size . "\n";
 
-        my $json_filename = $Id . '.json';
-        $bucket->add_key( $json_filename, $Formatted_msg,
-            { content_type => 'text/plain' },
-        );
+		my $bucket_name = $Subject;
+		my $bucket = $s3->add_bucket( { bucket => $bucket_name } )
+		  or die $s3->err . ": " . $s3->errstr;
 
+		my $json_filename = $Id . '.json';
+		$bucket->add_key( $json_filename, $Formatted_msg,
+		    { content_type => 'text/plain' },
+		);
+
+	    }
     }
 
 } # end put_S3
