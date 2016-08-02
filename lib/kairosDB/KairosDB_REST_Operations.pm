@@ -6,6 +6,7 @@ use REST::Client;
 use Config_Reader qw(getConfigValueByKey);
 use Json_Parser qw(json_parsing);
 use JSON qw( decode_json );
+use Time::HiRes qw(gettimeofday);
 use base 'Exporter';
 
 our @EXPORT_OK = qw(addDataPoints);
@@ -16,21 +17,8 @@ $client->setHost( getConfigValueByKey("kairosDBRestUrl") );
 
 sub addDataPoints {
 	 my ($json_text) = @_;
-        
-         my $json = '[{
-			"name": "EmailAlerts",
-			"timestamp": "1466532796000",
-			"type":"long",
-			"value":310,
-			"tags": {
-				"city": "San Jose",
-				"state": "California"
-		       	        }
-		      }]';
          my $data = "[";
          my @email_msg = json_parsing($json_text);
-         
-         
 
          while (@email_msg) {
 
@@ -39,12 +27,13 @@ sub addDataPoints {
 		my $Subject = pop @email_msg;
 		my $To      = pop @email_msg;
 		my $From    = pop @email_msg;
+                my $timestamp = int (gettimeofday * 1000);
 
                 my $tempdata = "{
 			\"name\": \"EmailAlerts\",
-			\"timestamp\": \"1466532796000\",
-			\"type\":\"long\",
-			\"value\":310,
+			\"timestamp\": \"$timestamp\",
+			\"type\":\"string\",
+			\"value\":\"$Subject\",
 			\"tags\": {
 				\"Size\":\"$Size\",
 				\"Id\": \"$Id\",
