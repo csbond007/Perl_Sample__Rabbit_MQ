@@ -7,8 +7,8 @@ influxDB_TableName: Alerts_29_1
 
 #AWS S3 
 awsS3Enable: false
-awsAccessKeyId: 
-awsSecretAccessKey: 
+awsAccessKeyId: test 
+awsSecretAccessKey: 123 
 
 #RabbitMQ Connection Configurations
 rabbitMQHost: localhost

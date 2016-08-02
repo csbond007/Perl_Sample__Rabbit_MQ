@@ -100,3 +100,13 @@ INFO 2016/08/02 12:23:45 getConfigValueByKey(): kairosDBMetricName -> Alerts01 C
 INFO 2016/08/02 12:23:45 getConfigValueByKey(): kairosDBMetricName -> Alerts01 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
 INFO 2016/08/02 12:23:45 getConfigValueByKey(): kairosDBMetricName -> Alerts01 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
 INFO 2016/08/02 12:23:45 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+ERROR 2016/08/02 15:46:02 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27298 ubuntu-precision-server 
+ERROR 2016/08/02 15:46:02 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27298 ubuntu-precision-server 
+ERROR 2016/08/02 15:48:44 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27337 ubuntu-precision-server 
+ERROR 2016/08/02 15:48:44 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27337 ubuntu-precision-server 
+ERROR 2016/08/02 15:50:52 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27398 ubuntu-precision-server 
+ERROR 2016/08/02 15:50:52 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27398 ubuntu-precision-server 
+ERROR 2016/08/02 15:51:42 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27414 ubuntu-precision-server 
+ERROR 2016/08/02 15:51:42 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27414 ubuntu-precision-server 
+ERROR 2016/08/02 15:53:40 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27449 ubuntu-precision-server 
+ERROR 2016/08/02 15:53:40 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27449 ubuntu-precision-server 
