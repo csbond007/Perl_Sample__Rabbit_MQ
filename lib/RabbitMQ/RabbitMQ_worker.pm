@@ -1,4 +1,3 @@
-
 package RabbitMQ_worker;
 use strict;
 use warnings;
@@ -9,6 +8,7 @@ $|++;
 use InfluxDB_Operations qw(write);
 use AWS qw(put_S3);
 use Config_Reader qw(getConfigValueByKey);
+use KairosDB_REST_Operations qw(addDataPoints);
 
 use base 'Exporter';
 
@@ -47,10 +47,21 @@ sub worker {
                    $ch->ack();
 
 		   get_Logger()->info("Writing the records into InfluxDB ");
-	           # write($body);
+	           #Write the records into InfluxDB
+        	   write($body);
 
-		   get_Logger()->info("Writing the files into AWS-S3 buckets "); 
-                   # put_S3($body);
+                   #Write the records into KairosDB
+        	   addDataPoints($body);
+                  
+                   #Write the files into AWS-S3 buckets
+		   my $s3Enable = getConfigValueByKey("awsS3Enable");
+
+		   if ($s3Enable) {  
+                     get_Logger()->info("Writing the files into AWS-S3 buckets is enabled "); 
+		     put_S3($body);
+		   }else{
+		     get_Logger()->info("Writing the files into AWS-S3 buckets is disabled"); 
+                   } 
                  } # end call back
 
     $ch->qos(prefetch_count => 1,);

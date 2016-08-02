@@ -5,3 +5,11 @@ INFO 2016/08/02 11:56:17 getConfigValueByKey(): rabbitMQport -> 5672 Config_Read
 INFO 2016/08/02 11:56:17 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23036 ubuntu-precision-server 
 INFO 2016/08/02 11:56:17 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23036 ubuntu-precision-server 
 INFO 2016/08/02 11:56:17 getConfigValueByKey(): rabbitMQName_worker -> task_queue_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23036 ubuntu-precision-server 
+INFO 2016/08/02 12:08:26 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
+INFO 2016/08/02 12:08:26 Starting Application.pl  main:: bin/application.pl (16) 23413 ubuntu-precision-server 
+INFO 2016/08/02 12:08:26 Starting Worker  RabbitMQ_worker::worker lib/RabbitMQ/RabbitMQ_worker.pm (22) 23413 ubuntu-precision-server 
+INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
+INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
+INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
+INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
+INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQName_worker -> task_queue_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
