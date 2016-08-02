@@ -13,3 +13,90 @@ INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQport -> 5672 Config_Read
 INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
 INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
 INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQName_worker -> task_queue_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
+INFO 2016/08/02 12:12:19 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
+INFO 2016/08/02 12:12:19 Starting Application.pl  main:: bin/application.pl (16) 23650 ubuntu-precision-server 
+INFO 2016/08/02 12:12:19 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
+INFO 2016/08/02 12:12:19 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
+INFO 2016/08/02 12:12:19 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
+INFO 2016/08/02 12:12:19 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
+INFO 2016/08/02 12:12:19 getConfigValueByKey(): rabbitMQName -> hello12 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 Starting Application.pl  main:: bin/application.pl (16) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): rabbitMQName -> emailAlerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:13:50 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 Starting Application.pl  main:: bin/application.pl (16) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): rabbitMQName -> emailAlerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:20:44 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 Starting Application.pl  main:: bin/application.pl (16) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): rabbitMQName -> emailAlerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:22:37 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
+INFO 2016/08/02 12:23:44 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:44 Starting Application.pl  main:: bin/application.pl (16) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:44 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:44 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:44 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:44 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): rabbitMQName -> emailAlerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): kairosDBMetricName -> Alerts01 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): kairosDBMetricName -> Alerts01 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): kairosDBMetricName -> Alerts01 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): kairosDBMetricName -> Alerts01 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
+INFO 2016/08/02 12:23:45 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 

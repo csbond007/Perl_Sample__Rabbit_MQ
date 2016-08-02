@@ -28,9 +28,10 @@ sub addDataPoints {
 		my $To      = pop @email_msg;
 		my $From    = pop @email_msg;
                 my $timestamp = int (gettimeofday * 1000);
+		my $metricName = getConfigValueByKey("kairosDBMetricName");
 
                 my $tempdata = "{
-			\"name\": \"EmailAlerts\",
+			\"name\": \"$metricName\",
 			\"timestamp\": \"$timestamp\",
 			\"type\":\"string\",
 			\"value\":\"$Subject\",

@@ -36,14 +36,14 @@ sub send {
 	     my $chan = $conn->open_channel();
 
 	     $chan->declare_queue(
-				  queue => 'hello1',
+				  queue => 'emailAlerts',
 				  durable => 1,
 				 );  
 
 
 	     $chan->publish(
    			    exchange => '',
-                            routing_key => 'hello1',
+                            routing_key => 'emailAlerts',
                             body => $json_text,
 			   );
 
