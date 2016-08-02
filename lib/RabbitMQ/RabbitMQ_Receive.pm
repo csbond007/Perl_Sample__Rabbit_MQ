@@ -8,6 +8,7 @@ $|++;
 
 use InfluxDB_Operations qw(write);
 use Config_Reader qw(getConfigValueByKey);
+use KairosDB_REST_Operations qw(addDataPoints);
 use AWS qw(put_S3);
 
 
@@ -41,6 +42,9 @@ sub receive {
         
         #Write the records into InfluxDB
         write($body);
+
+        #Write the records into KairosDB
+        addDataPoints($body);
  	
 	#Write the files into AWS-S3 buckets
 	my $s3Enable = getConfigValueByKey("awsS3Enable");
