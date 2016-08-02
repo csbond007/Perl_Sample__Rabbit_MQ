@@ -17,37 +17,40 @@ $client->setHost( getConfigValueByKey("kairosDBRestUrl") );
 
 sub addDataPoints {
 	 my ($json_text) = @_;
-         my $data = "[";
-         my @email_msg = json_parsing($json_text);
 
-         while (@email_msg) {
+         if( defined $json_text) {
+		 my $data = "[";
+		 my @email_msg = json_parsing($json_text);
 
-		my $Size    = pop @email_msg;
-		my $Id      = pop @email_msg;
-		my $Subject = pop @email_msg;
-		my $To      = pop @email_msg;
-		my $From    = pop @email_msg;
-                my $timestamp = int (gettimeofday * 1000);
-		my $metricName = getConfigValueByKey("kairosDBMetricName");
+		 while (@email_msg) {
 
-                my $tempdata = "{
-			\"name\": \"$metricName\",
-			\"timestamp\": \"$timestamp\",
-			\"type\":\"string\",
-			\"value\":\"$Subject\",
-			\"tags\": {
-				\"Size\":\"$Size\",
-				\"Id\": \"$Id\",
-				\"Subject\": \"$Subject\",
-				\"To\": \"$To\",
-				\"From\":\"$From\"
-		       	        }
-		      }";
-               $data .= $tempdata .",";
-         }
+			my $Size    = pop @email_msg;
+			my $Id      = pop @email_msg;
+			my $Subject = pop @email_msg;
+			my $To      = pop @email_msg;
+			my $From    = pop @email_msg;
+		        my $timestamp = int (gettimeofday * 1000);
+			my $metricName = getConfigValueByKey("kairosDBMetricName");
 
-        chop($data);
-        $data .= "]";
-	$client->POST( '/api/v1/datapoints', $data,{ "Content-type" => 'application/json' } );
+		        my $tempdata = "{
+				\"name\": \"$metricName\",
+				\"timestamp\": \"$timestamp\",
+				\"type\":\"long\",
+				\"value\":\"$Size\",
+				\"tags\": {
+					\"Size\":\"$Size\",
+					\"Id\": \"$Id\",
+					\"Subject\": \"$Subject\",
+					\"To\": \"$To\",
+					\"From\":\"$From\"
+			       	        }
+			      }";
+		       $data .= $tempdata .",";
+		 }
+
+		chop($data);
+		$data .= "]";
+		$client->POST( '/api/v1/datapoints', $data,{ "Content-type" => 'application/json' } );
+        }
 }
 
