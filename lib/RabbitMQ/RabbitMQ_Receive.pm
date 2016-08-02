@@ -47,7 +47,11 @@ sub receive {
         addDataPoints($body);
  	
 	#Write the files into AWS-S3 buckets
-        put_S3($body);
+	my $s3Enable = getConfigValueByKey("awsS3Enable");
+
+        if ($s3Enable) {  
+	   put_S3($body);
+	} 
     }
 
     $ch->consume(
