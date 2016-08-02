@@ -14,16 +14,19 @@ use base 'Exporter';
 
 our @EXPORT_OK = qw(worker);
 
+use Log_Initializer qw(get_Logger);
+
 sub worker {
-    
-   my $conn = Net::RabbitFoot->new()->load_xml_spec()->connect(
+
+    get_Logger()->info("Starting Worker ");
+
+    my	$conn = Net::RabbitFoot->new()->load_xml_spec()->connect(
  								host  => getConfigValueByKey("rabbitMQHost"),
 							        port  => getConfigValueByKey("rabbitMQport"),
 							        user  => getConfigValueByKey("rabbitMQuser"),
 							        pass  => getConfigValueByKey("rabbitMQpass"),
 							        vhost => '/',
 							        );
-
     my $ch = $conn->open_channel();
 
     $ch->declare_queue(
@@ -34,6 +37,8 @@ sub worker {
     print " [*] Waiting for messages. To exit press CTRL-C\n";
 
     sub callback {
+	           get_Logger()->info("Inside worker call-back ");
+
         	   my $var  = shift;
                    my $body = $var->{body}->{payload};
                    print " [x] Received \n"; #  $body \n";
@@ -41,11 +46,11 @@ sub worker {
                    print " [x] Done\n";
                    $ch->ack();
 
-	           #Write the records into InfluxDB
-	           write($body);
- 
-	           #Write the files into AWS-S3 buckets
-                   put_S3($body);
+		   get_Logger()->info("Writing the records into InfluxDB ");
+	           # write($body);
+
+		   get_Logger()->info("Writing the files into AWS-S3 buckets "); 
+                   # put_S3($body);
                  } # end call back
 
     $ch->qos(prefetch_count => 1,);
