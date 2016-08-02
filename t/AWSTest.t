@@ -18,4 +18,4 @@ require_ok( 'AWS' );
 
 # Test put_S3
 my $putS3 = AWS::put_S3();
-is($putS3, "null", "put_S3() IS null test");
+is($putS3, "", "put_S3() empty parameter");
