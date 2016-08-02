@@ -20,6 +20,6 @@ rabbitMQName_worker: task_queue_29_1
 
 #KairosDB
 kairosDBRestUrl: http://localhost:8080
-kairosDBMetricName: Alerts01
+kairosDBMetricName: Alerts
 
 
