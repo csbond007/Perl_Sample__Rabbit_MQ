@@ -62,8 +62,6 @@ ok( getConfigValueByKey("rabbitMQpass") ne "","RabbitMQ password Configuration")
 # Test getConfigValueByKey() with rabbitMQName parameter.
 ok( getConfigValueByKey("rabbitMQName") ne "","RabbitMQ Name Configuration");
 
-# Test getConfigValueByKey() with rabbitMQName_worker parameter.
-ok( getConfigValueByKey("rabbitMQName_worker") ne "","RabbitMQ Name_worker Configuration");
 
 
 #KairosDB

@@ -7,16 +7,8 @@ use lib './lib/AWS';
 use lib './lib/Utils';
 use lib './lib/KairosDB';
 
-#use RabbitMQ_Send qw(send);
-#use RabbitMQ_Receive qw(receive);
-#use RabbitMQ_worker qw(worker);
-use Error_Handled_RabbitMQ_worker qw(error_handled_worker);
+use RabbitMQ_Send qw(send);
+use RabbitMQ_Processer qw(processEmails);
 
-use Log_Initializer qw(get_Logger);
-
-get_Logger()->info("Starting Application.pl ");
-
-#send();
-#receive();
-#worker();
-error_handled_worker();
+send();
+processEmails();

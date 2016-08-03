@@ -16,7 +16,6 @@ rabbitMQport: 5672
 rabbitMQuser: guest
 rabbitMQpass: guest
 rabbitMQName: emailAlerts
-rabbitMQName_worker: task_queue_29_1 
 
 #KairosDB
 kairosDBRestUrl: http://localhost:8080
