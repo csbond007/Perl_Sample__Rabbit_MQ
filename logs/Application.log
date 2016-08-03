@@ -1,112 +1,71 @@
-INFO 2016/08/02 11:56:17 Starting Application.pl  main:: bin/application.pl (15) 23036 ubuntu-precision-server 
-INFO 2016/08/02 11:56:17 Starting Worker  RabbitMQ_worker::worker lib/RabbitMQ/RabbitMQ_worker.pm (21) 23036 ubuntu-precision-server 
-INFO 2016/08/02 11:56:17 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23036 ubuntu-precision-server 
-INFO 2016/08/02 11:56:17 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23036 ubuntu-precision-server 
-INFO 2016/08/02 11:56:17 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23036 ubuntu-precision-server 
-INFO 2016/08/02 11:56:17 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23036 ubuntu-precision-server 
-INFO 2016/08/02 11:56:17 getConfigValueByKey(): rabbitMQName_worker -> task_queue_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23036 ubuntu-precision-server 
-INFO 2016/08/02 12:08:26 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
-INFO 2016/08/02 12:08:26 Starting Application.pl  main:: bin/application.pl (16) 23413 ubuntu-precision-server 
-INFO 2016/08/02 12:08:26 Starting Worker  RabbitMQ_worker::worker lib/RabbitMQ/RabbitMQ_worker.pm (22) 23413 ubuntu-precision-server 
-INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
-INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
-INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
-INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
-INFO 2016/08/02 12:08:26 getConfigValueByKey(): rabbitMQName_worker -> task_queue_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23413 ubuntu-precision-server 
-INFO 2016/08/02 12:12:19 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
-INFO 2016/08/02 12:12:19 Starting Application.pl  main:: bin/application.pl (16) 23650 ubuntu-precision-server 
-INFO 2016/08/02 12:12:19 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
-INFO 2016/08/02 12:12:19 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
-INFO 2016/08/02 12:12:19 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
-INFO 2016/08/02 12:12:19 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
-INFO 2016/08/02 12:12:19 getConfigValueByKey(): rabbitMQName -> hello12 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23650 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 Starting Application.pl  main:: bin/application.pl (16) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): rabbitMQName -> emailAlerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:13:50 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23700 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 Starting Application.pl  main:: bin/application.pl (16) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): rabbitMQName -> emailAlerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:20:44 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23966 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 Starting Application.pl  main:: bin/application.pl (16) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): rabbitMQName -> emailAlerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:22:37 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23996 ubuntu-precision-server 
-INFO 2016/08/02 12:23:44 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:44 Starting Application.pl  main:: bin/application.pl (16) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:44 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:44 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:44 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:44 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): rabbitMQName -> emailAlerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): influxDB_TableName -> Alerts_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): kairosDBMetricName -> Alerts01 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): kairosDBMetricName -> Alerts01 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): kairosDBMetricName -> Alerts01 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): kairosDBMetricName -> Alerts01 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-INFO 2016/08/02 12:23:45 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 24016 ubuntu-precision-server 
-ERROR 2016/08/02 15:46:02 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27298 ubuntu-precision-server 
-ERROR 2016/08/02 15:46:02 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27298 ubuntu-precision-server 
-ERROR 2016/08/02 15:48:44 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27337 ubuntu-precision-server 
-ERROR 2016/08/02 15:48:44 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27337 ubuntu-precision-server 
-ERROR 2016/08/02 15:50:52 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27398 ubuntu-precision-server 
-ERROR 2016/08/02 15:50:52 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27398 ubuntu-precision-server 
-ERROR 2016/08/02 15:51:42 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27414 ubuntu-precision-server 
-ERROR 2016/08/02 15:51:42 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27414 ubuntu-precision-server 
-ERROR 2016/08/02 15:53:40 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27449 ubuntu-precision-server 
-ERROR 2016/08/02 15:53:40 getConfigValueByKey(): value is not present Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (30) 27449 ubuntu-precision-server 
+INFO 2016/08/03 15:12:52 Starting Application.pl  main:: bin/application.pl (17) 7658 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 Starting Application.pl  main:: bin/application.pl (17) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 Starting Worker  Error_Handled_RabbitMQ_worker::error_handled_worker lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (26) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 Connected to RabbitMQ.  Error_Handled_RabbitMQ_worker::_on_connect_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (50) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 Opening RabbitMQ channel...  Error_Handled_RabbitMQ_worker::_open_channel lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (58) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 Opened RabbitMQ channel.  Error_Handled_RabbitMQ_worker::_on_open_channel_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (72) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 Declaring RabbitMQ exchange...  Error_Handled_RabbitMQ_worker::_declare_exchange lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (82) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 Declared RabbitMQ exchange.  Error_Handled_RabbitMQ_worker::_on_declare_exchange_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (99) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 Binding RabbitMQ exchange...  Error_Handled_RabbitMQ_worker::_bind_exchange lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (107) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 Binded RabbitMQ exchange.  Error_Handled_RabbitMQ_worker::_on_bind_exchange_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (124) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 Declaring RabbitMQ queue...  Error_Handled_RabbitMQ_worker::_declare_queue lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (133) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 getConfigValueByKey(): rabbitMQName_worker -> task_queue_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:14:55 Declared RabbitMQ queue.  Error_Handled_RabbitMQ_worker::_on_declare_queue_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (155) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:15:06 Inside worker call-back  Error_Handled_RabbitMQ_worker::callback lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (158) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:15:11 Inside worker call-back  Error_Handled_RabbitMQ_worker::callback lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (158) 7683 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 Starting Application.pl  main:: bin/application.pl (17) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 Starting Worker  Error_Handled_RabbitMQ_worker::error_handled_worker lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (24) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 Connected to RabbitMQ.  Error_Handled_RabbitMQ_worker::_on_connect_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (48) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 Opening RabbitMQ channel...  Error_Handled_RabbitMQ_worker::_open_channel lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (56) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 Opened RabbitMQ channel.  Error_Handled_RabbitMQ_worker::_on_open_channel_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (70) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 Declaring RabbitMQ exchange...  Error_Handled_RabbitMQ_worker::_declare_exchange lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (80) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 Declared RabbitMQ exchange.  Error_Handled_RabbitMQ_worker::_on_declare_exchange_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (97) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 Binding RabbitMQ exchange...  Error_Handled_RabbitMQ_worker::_bind_exchange lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (105) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 Binded RabbitMQ exchange.  Error_Handled_RabbitMQ_worker::_on_bind_exchange_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (122) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 Declaring RabbitMQ queue...  Error_Handled_RabbitMQ_worker::_declare_queue lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (131) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 getConfigValueByKey(): rabbitMQName_worker -> task_queue_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:43 Declared RabbitMQ queue.  Error_Handled_RabbitMQ_worker::_on_declare_queue_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (153) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:17:48 Inside worker call-back  Error_Handled_RabbitMQ_worker::callback lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (156) 7723 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 Starting Application.pl  main:: bin/application.pl (17) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 Starting Worker  Error_Handled_RabbitMQ_worker::error_handled_worker lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (23) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 Connected to RabbitMQ.  Error_Handled_RabbitMQ_worker::_on_connect_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (46) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 Opening RabbitMQ channel...  Error_Handled_RabbitMQ_worker::_open_channel lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (54) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 Opened RabbitMQ channel.  Error_Handled_RabbitMQ_worker::_on_open_channel_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (68) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 Declaring RabbitMQ exchange...  Error_Handled_RabbitMQ_worker::_declare_exchange lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (78) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 Declared RabbitMQ exchange.  Error_Handled_RabbitMQ_worker::_on_declare_exchange_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (95) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 Binding RabbitMQ exchange...  Error_Handled_RabbitMQ_worker::_bind_exchange lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (103) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 Binded RabbitMQ exchange.  Error_Handled_RabbitMQ_worker::_on_bind_exchange_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (120) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 Declaring RabbitMQ queue...  Error_Handled_RabbitMQ_worker::_declare_queue lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (129) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 getConfigValueByKey(): rabbitMQName_worker -> task_queue_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:03 Declared RabbitMQ queue.  Error_Handled_RabbitMQ_worker::_on_declare_queue_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (151) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 15:20:10 Inside worker call-back  Error_Handled_RabbitMQ_worker::callback lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (154) 7754 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 Starting Application.pl  main:: bin/application.pl (17) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 Starting Worker  Error_Handled_RabbitMQ_worker::error_handled_worker lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (22) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 Connected to RabbitMQ.  Error_Handled_RabbitMQ_worker::_on_connect_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (46) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 Opening RabbitMQ channel...  Error_Handled_RabbitMQ_worker::_open_channel lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (55) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 Opened RabbitMQ channel.  Error_Handled_RabbitMQ_worker::_on_open_channel_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (70) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 Declaring RabbitMQ exchange...  Error_Handled_RabbitMQ_worker::_declare_exchange lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (80) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 Declared RabbitMQ exchange.  Error_Handled_RabbitMQ_worker::_on_declare_exchange_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (98) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 Binding RabbitMQ exchange...  Error_Handled_RabbitMQ_worker::_bind_exchange lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (107) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 Binded RabbitMQ exchange.  Error_Handled_RabbitMQ_worker::_on_bind_exchange_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (126) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 Declaring RabbitMQ queue...  Error_Handled_RabbitMQ_worker::_declare_queue lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (135) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 getConfigValueByKey(): rabbitMQName_worker -> task_queue_29_1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:18 Declared RabbitMQ queue.  Error_Handled_RabbitMQ_worker::_on_declare_queue_success lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (159) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:26 Inside worker call-back  Error_Handled_RabbitMQ_worker::callback lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (162) 8273 OFILP121-Ubuntu 
+INFO 2016/08/03 16:01:34 Inside worker call-back  Error_Handled_RabbitMQ_worker::callback lib/RabbitMQ/Error_Handled_RabbitMQ_worker.pm (162) 8273 OFILP121-Ubuntu 
