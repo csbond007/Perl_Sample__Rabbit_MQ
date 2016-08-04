@@ -7,6 +7,8 @@ use Config_Reader qw(getConfigValueByKey);
 use Json_Parser qw(json_parsing);
 use JSON qw( decode_json );
 use Time::HiRes qw(gettimeofday);
+use Log_Initializer qw(get_Logger);
+
 use base 'Exporter';
 
 our @EXPORT_OK = qw(addDataPoints);
@@ -16,6 +18,9 @@ $client->setHost( getConfigValueByKey("kairosDBRestUrl") );
 
 
 sub addDataPoints {
+         
+	 get_Logger()->info( "Starting to write to KairosDB" );
+
 	 my ($json_text) = @_;
 
          if( defined $json_text) {
@@ -24,11 +29,18 @@ sub addDataPoints {
 
 		 while (@email_msg) {
 
-			my $Size    = pop @email_msg;
-			my $Id      = pop @email_msg;
-			my $Subject = pop @email_msg;
-			my $To      = pop @email_msg;
-			my $From    = pop @email_msg;
+        		my $Size    ;
+        		my $Id      ;
+        		my $Subject ;
+        		my $To      ;
+        		my $From    ;
+
+        		if (@email_msg > 0) { $Size       = pop @email_msg; } else { get_Logger()->info( "Size field missing - Empty field in msg" ); }
+        		if (@email_msg > 0) { $Id         = pop @email_msg; } else { get_Logger()->info( "Id field missing - Empty field in msg" ); }
+        		if (@email_msg > 0) { $Subject    = pop @email_msg; } else { get_Logger()->info( "Subject field missing -Empty field in msg" ); }
+        		if (@email_msg > 0) { $To         = pop @email_msg; } else { get_Logger()->info( "To field missing - Empty field in msg" ); }
+      			if (@email_msg > 0) { $From       = pop @email_msg; } else { get_Logger()->info( "From field missing -Empty field in msg" ); }
+
 		        my $timestamp = int (gettimeofday * 1000);
 			my $metricName = getConfigValueByKey("kairosDBMetricName");
 
@@ -46,11 +58,14 @@ sub addDataPoints {
 			       	        }
 			      }";
 		       $data .= $tempdata .",";
-		 }
+		 } # end while
 
 		chop($data);
 		$data .= "]";
 		$client->POST( '/api/v1/datapoints', $data,{ "Content-type" => 'application/json' } );
-        }
-}
+        } # end if
+
+   get_Logger()->info( "End of KairosDB Operations" );
+
+} # addDataPoints
 

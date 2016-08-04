@@ -63,9 +63,12 @@ sub write {
                 }
             ],
 
-            on_success => $cv,
+            on_success => sub { 
+				get_Logger()->info( "Successfully written to InfluxDB" );
+				return $cv;
+				},
             on_error   => sub {
-				get_Logger()->info( "Error in writing to InfluxDB" );
+				get_Logger()->error( "Error in writing to InfluxDB" );
             		      }
         );    # end-write
         $cv->end;
@@ -73,7 +76,7 @@ sub write {
     } # end-while
     $cv->recv;
 
-	get_Logger()->info( "Successfully written to InfluxDB" );
+	get_Logger()->info( "End of InfluxDB Operations" );
 
 }    # end write
 
