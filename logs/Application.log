@@ -1,117 +1,53 @@
-INFO 2016/08/04 16:20:03 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 Starting Worker  RabbitMQ_Processer::processEmails lib/RabbitMQ/RabbitMQ_Processer.pm (22) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 Connected to RabbitMQ.  RabbitMQ_Processer::_on_connect_success lib/RabbitMQ/RabbitMQ_Processer.pm (45) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 Opening RabbitMQ channel...  RabbitMQ_Processer::_open_channel lib/RabbitMQ/RabbitMQ_Processer.pm (53) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 Opened RabbitMQ channel.  RabbitMQ_Processer::_on_open_channel_success lib/RabbitMQ/RabbitMQ_Processer.pm (67) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 Declaring RabbitMQ exchange...  RabbitMQ_Processer::_declare_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (76) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 Declared RabbitMQ exchange.  RabbitMQ_Processer::_on_declare_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (94) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 Binding RabbitMQ exchange...  RabbitMQ_Processer::_bind_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (102) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 Binded RabbitMQ exchange.  RabbitMQ_Processer::_on_bind_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (121) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 Declaring RabbitMQ queue...  RabbitMQ_Processer::_declare_queue lib/RabbitMQ/RabbitMQ_Processer.pm (129) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:03 Declared RabbitMQ queue.  RabbitMQ_Processer::_on_declare_queue_success lib/RabbitMQ/RabbitMQ_Processer.pm (155) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (158) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 Successfully written to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 Successfully written to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (68) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:20:08 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23126 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 Starting Worker  RabbitMQ_Processer::processEmails lib/RabbitMQ/RabbitMQ_Processer.pm (22) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 Connected to RabbitMQ.  RabbitMQ_Processer::_on_connect_success lib/RabbitMQ/RabbitMQ_Processer.pm (45) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 Opening RabbitMQ channel...  RabbitMQ_Processer::_open_channel lib/RabbitMQ/RabbitMQ_Processer.pm (53) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 Opened RabbitMQ channel.  RabbitMQ_Processer::_on_open_channel_success lib/RabbitMQ/RabbitMQ_Processer.pm (67) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 Declaring RabbitMQ exchange...  RabbitMQ_Processer::_declare_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (76) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 Declared RabbitMQ exchange.  RabbitMQ_Processer::_on_declare_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (94) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 Binding RabbitMQ exchange...  RabbitMQ_Processer::_bind_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (102) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 Binded RabbitMQ exchange.  RabbitMQ_Processer::_on_bind_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (121) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 Declaring RabbitMQ queue...  RabbitMQ_Processer::_declare_queue lib/RabbitMQ/RabbitMQ_Processer.pm (129) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:46 Declared RabbitMQ queue.  RabbitMQ_Processer::_on_declare_queue_success lib/RabbitMQ/RabbitMQ_Processer.pm (155) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (158) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 Successfully written to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 Successfully written to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (68) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:48 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (158) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 Successfully written to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 Successfully written to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (68) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:21:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23174 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 Starting Worker  RabbitMQ_Processer::processEmails lib/RabbitMQ/RabbitMQ_Processer.pm (22) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 Connected to RabbitMQ.  RabbitMQ_Processer::_on_connect_success lib/RabbitMQ/RabbitMQ_Processer.pm (45) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 Opening RabbitMQ channel...  RabbitMQ_Processer::_open_channel lib/RabbitMQ/RabbitMQ_Processer.pm (53) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 Opened RabbitMQ channel.  RabbitMQ_Processer::_on_open_channel_success lib/RabbitMQ/RabbitMQ_Processer.pm (67) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 Declaring RabbitMQ exchange...  RabbitMQ_Processer::_declare_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (76) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 Declared RabbitMQ exchange.  RabbitMQ_Processer::_on_declare_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (94) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 Binding RabbitMQ exchange...  RabbitMQ_Processer::_bind_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (102) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 Binded RabbitMQ exchange.  RabbitMQ_Processer::_on_bind_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (121) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 Declaring RabbitMQ queue...  RabbitMQ_Processer::_declare_queue lib/RabbitMQ/RabbitMQ_Processer.pm (129) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23200 OFILP121-Ubuntu 
-INFO 2016/08/04 16:23:29 Declared RabbitMQ queue.  RabbitMQ_Processer::_on_declare_queue_success lib/RabbitMQ/RabbitMQ_Processer.pm (155) 23200 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 Starting Worker  RabbitMQ_Processer::processEmails lib/RabbitMQ/RabbitMQ_Processer.pm (22) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 Connected to RabbitMQ.  RabbitMQ_Processer::_on_connect_success lib/RabbitMQ/RabbitMQ_Processer.pm (45) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 Opening RabbitMQ channel...  RabbitMQ_Processer::_open_channel lib/RabbitMQ/RabbitMQ_Processer.pm (53) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 Opened RabbitMQ channel.  RabbitMQ_Processer::_on_open_channel_success lib/RabbitMQ/RabbitMQ_Processer.pm (67) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 Declaring RabbitMQ exchange...  RabbitMQ_Processer::_declare_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (76) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 Declared RabbitMQ exchange.  RabbitMQ_Processer::_on_declare_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (94) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 Binding RabbitMQ exchange...  RabbitMQ_Processer::_bind_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (102) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 Binded RabbitMQ exchange.  RabbitMQ_Processer::_on_bind_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (121) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 Declaring RabbitMQ queue...  RabbitMQ_Processer::_declare_queue lib/RabbitMQ/RabbitMQ_Processer.pm (129) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:24 Declared RabbitMQ queue.  RabbitMQ_Processer::_on_declare_queue_success lib/RabbitMQ/RabbitMQ_Processer.pm (155) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (158) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 End of InfluxDB Operations InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+ERROR 2016/08/04 16:54:27  Error while posting to client in KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (73) 23777 OFILP121-Ubuntu 
+ERROR 2016/08/04 16:54:27  Error Response Content : REST::Client=HASH(0x52141b8)->responseContent() KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (74) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 End of KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (78) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:27 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:28 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:28 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:28 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 16:54:28 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23777 OFILP121-Ubuntu 

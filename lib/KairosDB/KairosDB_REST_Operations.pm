@@ -63,6 +63,16 @@ sub addDataPoints {
 		chop($data);
 		$data .= "]";
 		$client->POST( '/api/v1/datapoints', $data,{ "Content-type" => 'application/json' } );
+
+		if( $client->responseCode() eq '204' )
+		 {
+		   get_Logger()->info( " Successfully posted to client in KairosDB Operations" );
+ 		 }
+                else
+                 {
+		   get_Logger()->error( " Error while posting to client in KairosDB Operations" );
+		   get_Logger()->error( " Error Response Content : $client->responseContent()");
+		 }
         } # end if
 
    get_Logger()->info( "End of KairosDB Operations" );

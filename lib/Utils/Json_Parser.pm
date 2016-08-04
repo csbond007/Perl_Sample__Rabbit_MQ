@@ -1,13 +1,17 @@
 package Json_Parser;
 use strict;
 use warnings;
+
 use JSON qw( );
+use Log_Initializer qw(get_Logger);
 
 use base 'Exporter';
 
 our @EXPORT_OK = qw(json_parsing);
 
 sub json_parsing {
+
+    get_Logger()->info( "Starting Json Parsing" );
 
     my ($json_text) = @_;
 
@@ -23,6 +27,8 @@ sub json_parsing {
     my @email_msg;
 
     for ( @{ $data->{alerts} } ) {
+        
+	get_Logger()->info( "Data processing inside Json Parsing" );
 
         $From    = $_->{From};
         $To      = $_->{To};
@@ -36,7 +42,9 @@ sub json_parsing {
 
         push( @email_msg, @part_msg );
 
-    }
+    } # end for
+
+    get_Logger()->info( "Json Parsing complete" );
 
     return @email_msg;
 }    # end json_parsing
