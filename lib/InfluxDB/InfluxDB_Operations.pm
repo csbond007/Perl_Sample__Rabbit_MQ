@@ -6,6 +6,7 @@ use InfluxDB;
 use AnyEvent::InfluxDB;
 use JSON qw( );
 use Config_Reader qw(getConfigValueByKey);
+use Log_Initializer qw(get_Logger);
 
 use Json_Parser qw(json_parsing);
 
@@ -14,6 +15,8 @@ use base 'Exporter';
 our @EXPORT_OK = qw(write);
 
 sub write {
+
+    get_Logger()->info( "Starting to write to InfluxDB" );
 
     my ($json_text) = @_;
    
@@ -27,11 +30,17 @@ sub write {
 
     while (@email_msg) {
 
-        my $Size    = pop @email_msg;
-        my $Id      = pop @email_msg;
-        my $Subject = pop @email_msg;
-        my $To      = pop @email_msg;
-        my $From    = pop @email_msg;
+        my $Size    ;
+        my $Id      ;
+        my $Subject ;
+        my $To      ;
+        my $From    ;
+
+        if (@email_msg > 0) { $Size       = pop @email_msg; } else { get_Logger()->info( "Size field missing - Empty field in msg" ); }
+	if (@email_msg > 0) { $Id         = pop @email_msg; } else { get_Logger()->info( "Id field missing - Empty field in msg" ); }
+	if (@email_msg > 0) { $Subject    = pop @email_msg; } else { get_Logger()->info( "Subject field missing -Empty field in msg" ); }
+	if (@email_msg > 0) { $To         = pop @email_msg; } else { get_Logger()->info( "To field missing - Empty field in msg" ); }
+	if (@email_msg > 0) { $From       = pop @email_msg; } else { get_Logger()->info( "From field missing -Empty field in msg" ); }
 
         $cv->begin;
 
@@ -56,11 +65,15 @@ sub write {
 
             on_success => $cv,
             on_error   => sub {
-            }
+				get_Logger()->info( "Error in writing to InfluxDB" );
+            		      }
         );    # end-write
         $cv->end;
 
     } # end-while
     $cv->recv;
+
+	get_Logger()->info( "Successfully written to InfluxDB" );
+
 }    # end write
 

@@ -3,12 +3,12 @@ influxDBUrl: http://localhost:8086
 influxDBUserName: admin
 influxDBUserPassword: admin
 influxDB_Name: Demo
-influxDB_TableName: Alerts_29_1
+influxDB_TableName: Aug_4_1
 
 #AWS S3 
-awsS3Enable: false
-awsAccessKeyId: test 
-awsSecretAccessKey: 123 
+awsS3Enable: true
+awsAccessKeyId: test
+awsSecretAccessKey: 123
 
 #RabbitMQ Connection Configurations
 rabbitMQHost: localhost

@@ -6,12 +6,15 @@ use Amazon::S3;
 use JSON qw( );
 use Config_Reader qw(getConfigValueByKey);
 use Json_Parser qw(json_parsing);
+use Log_Initializer qw(get_Logger);
 
 use base 'Exporter';
 
 our @EXPORT_OK = qw(put_S3);
 
 sub put_S3 {
+	
+    get_Logger()->info( "Starting to write to AWS" );
 
     my ($json_text) = @_;
 
@@ -32,17 +35,23 @@ sub put_S3 {
 
 	    while (@email_msg) {
 
-		my $Size    = pop @email_msg;
-		my $Id      = pop @email_msg;
-		my $Subject = pop @email_msg;
-		my $To      = pop @email_msg;
-		my $From    = pop @email_msg;
-		my $Formatted_msg =
-		    $From . "\n"
-		  . $To . "\n"
-		  . $Subject . "\n"
-		  . $Id . "\n"
-		  . $Size . "\n";
+	       my $Size    ;
+               my $Id      ;
+               my $Subject ;
+               my $To      ;
+               my $From    ;
+
+               if (@email_msg > 0) { $Size       = pop @email_msg; } else { get_Logger()->info( "Size field missing - Empty field in msg" ); }
+               if (@email_msg > 0) { $Id         = pop @email_msg; } else { get_Logger()->info( "Id field missing - Empty field in msg" ); }
+               if (@email_msg > 0) { $Subject    = pop @email_msg; } else { get_Logger()->info( "Subject field missing -Empty field in msg" ); }
+               if (@email_msg > 0) { $To         = pop @email_msg; } else { get_Logger()->info( "To field missing - Empty field in msg" ); }
+               if (@email_msg > 0) { $From       = pop @email_msg; } else { get_Logger()->info( "From field missing -Empty field in msg" ); }
+
+		my $Formatted_msg = $From . "\n"
+				  . $To . "\n"
+		  		  . $Subject . "\n"
+		                  . $Id . "\n"
+		                  . $Size . "\n";
 
 		my $bucket_name = $Subject;
 		my $bucket = $s3->add_bucket( { bucket => $bucket_name } )
@@ -53,8 +62,10 @@ sub put_S3 {
 		    { content_type => 'text/plain' },
 		);
 
-	    }
-    }
+	    } # end while
+    } # end if
+
+    get_Logger()->info( "Finished writing to AWS" );
 
 } # end put_S3
 
