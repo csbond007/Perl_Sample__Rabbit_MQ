@@ -2,7 +2,6 @@ package InfluxDB_Operations;
 use strict;
 use warnings;
 
-use InfluxDB;
 use AnyEvent::InfluxDB;
 use JSON qw( );
 use Config_Reader qw(getConfigValueByKey);

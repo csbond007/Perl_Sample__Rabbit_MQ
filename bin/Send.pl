@@ -1,20 +1,17 @@
-package RabbitMQ_Processer;
+#!/usr/bin/perl
 use strict;
 use warnings;
 
 use AnyEvent::RabbitMQ;
 
-use InfluxDB_Operations qw(write);
-use AWS qw(put_S3);
+use lib './lib/Utils';
+
 use Config_Reader qw(getConfigValueByKey);
 use Log_Initializer qw(get_Logger);
-use KairosDB_REST_Operations qw(addDataPoints);
 
-use base 'Exporter';
+sendEmails();
 
-our @EXPORT_OK = qw(processEmails);
-
-sub processEmails {
+sub sendEmails {
 
     my $condvar = AnyEvent->condvar;
     my $ar      = AnyEvent::RabbitMQ->new;
@@ -153,36 +150,24 @@ sub _on_declare_queue_success {
 
     my ( $condvar, $ar, $channel ) = @_;
     get_Logger()->info("Declared RabbitMQ queue. ");
-   
-    sub callback {
-        get_Logger()->info("Inside worker call-back ");
 
-        my $var  = shift;
-        my $body = $var->{body}->{payload};
-        print " [x] Received\n";
+    my $filename = './data/emailAlerts.json';
 
-        #Write the records into InfluxDB
-        write($body);
+    my $json_text = do {
+				   open(my $json_fh, "<:encoding(UTF-8)", $filename)
+			           or die("Can't open \$filename\": $!\n");
+			           local $/;
+				   <$json_fh>
+			};
+    $channel->publish(
+   			    exchange => '',
+                            routing_key => getConfigValueByKey("rabbitMQName"),
+                            body => $json_text,
+		      );
 
-        #Write the records into KairosDB
-        addDataPoints($body);
+    print " [x] Sent $json_text\n";
 
-        #Write the files into AWS-S3 buckets
-        my $s3Enable = getConfigValueByKey("awsS3Enable");
-
-        if ($s3Enable) {
-            put_S3($body);
-        }
-
-        $channel->ack();
-    }
-
-    $channel->qos( prefetch_count => 1, );
-
-    $channel->consume(
-        on_consume => \&callback,
-        no_ack     => 0,
-    );
+    $ar->close();
     return;
 }
 

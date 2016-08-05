@@ -51,3 +51,758 @@ INFO 2016/08/04 16:54:28 Successfully written to InfluxDB InfluxDB_Operations::_
 INFO 2016/08/04 16:54:28 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23777 OFILP121-Ubuntu 
 INFO 2016/08/04 16:54:28 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23777 OFILP121-Ubuntu 
 INFO 2016/08/04 16:54:28 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 23777 OFILP121-Ubuntu 
+INFO 2016/08/04 17:14:53 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 Starting Worker  RabbitMQ_Processer::processEmails lib/RabbitMQ/RabbitMQ_Processer.pm (22) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 Connected to RabbitMQ.  RabbitMQ_Processer::_on_connect_success lib/RabbitMQ/RabbitMQ_Processer.pm (45) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 Opening RabbitMQ channel...  RabbitMQ_Processer::_open_channel lib/RabbitMQ/RabbitMQ_Processer.pm (53) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 Opened RabbitMQ channel.  RabbitMQ_Processer::_on_open_channel_success lib/RabbitMQ/RabbitMQ_Processer.pm (67) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 Declaring RabbitMQ exchange...  RabbitMQ_Processer::_declare_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (76) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 Declared RabbitMQ exchange.  RabbitMQ_Processer::_on_declare_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (94) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 Binding RabbitMQ exchange...  RabbitMQ_Processer::_bind_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (102) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 Binded RabbitMQ exchange.  RabbitMQ_Processer::_on_bind_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (121) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 Declaring RabbitMQ queue...  RabbitMQ_Processer::_declare_queue lib/RabbitMQ/RabbitMQ_Processer.pm (129) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:14:54 Declared RabbitMQ queue.  RabbitMQ_Processer::_on_declare_queue_success lib/RabbitMQ/RabbitMQ_Processer.pm (155) 21200 sasikumar-VirtualBox 
+INFO 2016/08/04 17:40:09 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22318 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:40 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:40 Starting Worker  RabbitMQ_Processer::processEmails lib/RabbitMQ/RabbitMQ_Processer.pm (22) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:40 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:40 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:40 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:40 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:41 Connected to RabbitMQ.  RabbitMQ_Processer::_on_connect_success lib/RabbitMQ/RabbitMQ_Processer.pm (45) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:41 Opening RabbitMQ channel...  RabbitMQ_Processer::_open_channel lib/RabbitMQ/RabbitMQ_Processer.pm (53) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:41 Opened RabbitMQ channel.  RabbitMQ_Processer::_on_open_channel_success lib/RabbitMQ/RabbitMQ_Processer.pm (67) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:41 Declaring RabbitMQ exchange...  RabbitMQ_Processer::_declare_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (76) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:41 Declared RabbitMQ exchange.  RabbitMQ_Processer::_on_declare_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (94) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:41 Binding RabbitMQ exchange...  RabbitMQ_Processer::_bind_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (102) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:41 Binded RabbitMQ exchange.  RabbitMQ_Processer::_on_bind_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (121) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:41 Declaring RabbitMQ queue...  RabbitMQ_Processer::_declare_queue lib/RabbitMQ/RabbitMQ_Processer.pm (129) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:41 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:41:41 Declared RabbitMQ queue.  RabbitMQ_Processer::_on_declare_queue_success lib/RabbitMQ/RabbitMQ_Processer.pm (155) 22343 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Starting Worker  RabbitMQ_Processer::processEmails lib/RabbitMQ/RabbitMQ_Processer.pm (22) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Connected to RabbitMQ.  RabbitMQ_Processer::_on_connect_success lib/RabbitMQ/RabbitMQ_Processer.pm (45) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Opening RabbitMQ channel...  RabbitMQ_Processer::_open_channel lib/RabbitMQ/RabbitMQ_Processer.pm (53) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Opened RabbitMQ channel.  RabbitMQ_Processer::_on_open_channel_success lib/RabbitMQ/RabbitMQ_Processer.pm (67) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Declaring RabbitMQ exchange...  RabbitMQ_Processer::_declare_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (76) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Declared RabbitMQ exchange.  RabbitMQ_Processer::_on_declare_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (94) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Binding RabbitMQ exchange...  RabbitMQ_Processer::_bind_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (102) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Binded RabbitMQ exchange.  RabbitMQ_Processer::_on_bind_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (121) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Declaring RabbitMQ queue...  RabbitMQ_Processer::_declare_queue lib/RabbitMQ/RabbitMQ_Processer.pm (129) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Declared RabbitMQ queue.  RabbitMQ_Processer::_on_declare_queue_success lib/RabbitMQ/RabbitMQ_Processer.pm (155) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (174) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 End of InfluxDB Operations InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46  Successfully posted to client in KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (67) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 End of KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (78) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:42:46 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22365 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Starting Worker  RabbitMQ_Processer::processEmails lib/RabbitMQ/RabbitMQ_Processer.pm (22) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Connected to RabbitMQ.  RabbitMQ_Processer::_on_connect_success lib/RabbitMQ/RabbitMQ_Processer.pm (45) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Opening RabbitMQ channel...  RabbitMQ_Processer::_open_channel lib/RabbitMQ/RabbitMQ_Processer.pm (53) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Opened RabbitMQ channel.  RabbitMQ_Processer::_on_open_channel_success lib/RabbitMQ/RabbitMQ_Processer.pm (67) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Declaring RabbitMQ exchange...  RabbitMQ_Processer::_declare_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (76) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Declared RabbitMQ exchange.  RabbitMQ_Processer::_on_declare_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (94) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Binding RabbitMQ exchange...  RabbitMQ_Processer::_bind_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (102) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Binded RabbitMQ exchange.  RabbitMQ_Processer::_on_bind_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (121) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Declaring RabbitMQ queue...  RabbitMQ_Processer::_declare_queue lib/RabbitMQ/RabbitMQ_Processer.pm (129) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Declared RabbitMQ queue.  RabbitMQ_Processer::_on_declare_queue_success lib/RabbitMQ/RabbitMQ_Processer.pm (155) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (174) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 End of InfluxDB Operations InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:18  Successfully posted to client in KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (67) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:18 End of KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (78) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:18 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:18 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:18 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:18 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:18 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:18 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:18 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:18 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:47:18 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22457 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 Starting Worker  RabbitMQ_Processer::processEmails lib/RabbitMQ/RabbitMQ_Processer.pm (22) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 Connected to RabbitMQ.  RabbitMQ_Processer::_on_connect_success lib/RabbitMQ/RabbitMQ_Processer.pm (45) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 Opening RabbitMQ channel...  RabbitMQ_Processer::_open_channel lib/RabbitMQ/RabbitMQ_Processer.pm (53) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 Opened RabbitMQ channel.  RabbitMQ_Processer::_on_open_channel_success lib/RabbitMQ/RabbitMQ_Processer.pm (67) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 Declaring RabbitMQ exchange...  RabbitMQ_Processer::_declare_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (76) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 Declared RabbitMQ exchange.  RabbitMQ_Processer::_on_declare_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (94) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 Binding RabbitMQ exchange...  RabbitMQ_Processer::_bind_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (102) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 Binded RabbitMQ exchange.  RabbitMQ_Processer::_on_bind_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (121) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 Declaring RabbitMQ queue...  RabbitMQ_Processer::_declare_queue lib/RabbitMQ/RabbitMQ_Processer.pm (129) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 Declared RabbitMQ queue.  RabbitMQ_Processer::_on_declare_queue_success lib/RabbitMQ/RabbitMQ_Processer.pm (155) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:16 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (174) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 End of InfluxDB Operations InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17  Successfully posted to client in KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (67) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 End of KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (78) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:49:17 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22505 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 Starting Worker  RabbitMQ_Processer::processEmails lib/RabbitMQ/RabbitMQ_Processer.pm (22) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 Connected to RabbitMQ.  RabbitMQ_Processer::_on_connect_success lib/RabbitMQ/RabbitMQ_Processer.pm (45) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 Opening RabbitMQ channel...  RabbitMQ_Processer::_open_channel lib/RabbitMQ/RabbitMQ_Processer.pm (53) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 Opened RabbitMQ channel.  RabbitMQ_Processer::_on_open_channel_success lib/RabbitMQ/RabbitMQ_Processer.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 Declaring RabbitMQ exchange...  RabbitMQ_Processer::_declare_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (76) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 Declared RabbitMQ exchange.  RabbitMQ_Processer::_on_declare_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (94) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 Binding RabbitMQ exchange...  RabbitMQ_Processer::_bind_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (102) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 Binded RabbitMQ exchange.  RabbitMQ_Processer::_on_bind_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (121) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 Declaring RabbitMQ queue...  RabbitMQ_Processer::_declare_queue lib/RabbitMQ/RabbitMQ_Processer.pm (129) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 17:51:42 Declared RabbitMQ queue.  RabbitMQ_Processer::_on_declare_queue_success lib/RabbitMQ/RabbitMQ_Processer.pm (155) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Starting Worker  main::sendEmails bin/RabbitMQ_Send.pl (19) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Connected to RabbitMQ.  main::_on_connect_success bin/RabbitMQ_Send.pl (42) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Opening RabbitMQ channel...  main::_open_channel bin/RabbitMQ_Send.pl (50) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Opened RabbitMQ channel.  main::_on_open_channel_success bin/RabbitMQ_Send.pl (64) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Declaring RabbitMQ exchange...  main::_declare_exchange bin/RabbitMQ_Send.pl (73) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Declared RabbitMQ exchange.  main::_on_declare_exchange_success bin/RabbitMQ_Send.pl (91) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Binding RabbitMQ exchange...  main::_bind_exchange bin/RabbitMQ_Send.pl (99) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Binded RabbitMQ exchange.  main::_on_bind_exchange_success bin/RabbitMQ_Send.pl (118) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Declaring RabbitMQ queue...  main::_declare_queue bin/RabbitMQ_Send.pl (126) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Declared RabbitMQ queue.  main::_on_declare_queue_success bin/RabbitMQ_Send.pl (152) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22853 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (158) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 End of InfluxDB Operations InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09  Successfully posted to client in KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 End of KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (78) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:09 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Starting Worker  main::sendEmails bin/RabbitMQ_Send.pl (19) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Connected to RabbitMQ.  main::_on_connect_success bin/RabbitMQ_Send.pl (42) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Opening RabbitMQ channel...  main::_open_channel bin/RabbitMQ_Send.pl (50) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Opened RabbitMQ channel.  main::_on_open_channel_success bin/RabbitMQ_Send.pl (64) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Declaring RabbitMQ exchange...  main::_declare_exchange bin/RabbitMQ_Send.pl (73) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Declared RabbitMQ exchange.  main::_on_declare_exchange_success bin/RabbitMQ_Send.pl (91) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Binding RabbitMQ exchange...  main::_bind_exchange bin/RabbitMQ_Send.pl (99) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Binded RabbitMQ exchange.  main::_on_bind_exchange_success bin/RabbitMQ_Send.pl (118) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Declaring RabbitMQ queue...  main::_declare_queue bin/RabbitMQ_Send.pl (126) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Declared RabbitMQ queue.  main::_on_declare_queue_success bin/RabbitMQ_Send.pl (152) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22863 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (158) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 End of InfluxDB Operations InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33  Successfully posted to client in KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 End of KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (78) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/04 18:01:33 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 22570 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:01 Starting Worker  main::sendEmails bin/Send.pl (19) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 Connected to RabbitMQ.  main::_on_connect_success bin/Send.pl (42) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 Opening RabbitMQ channel...  main::_open_channel bin/Send.pl (50) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 Opened RabbitMQ channel.  main::_on_open_channel_success bin/Send.pl (64) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 Declaring RabbitMQ exchange...  main::_declare_exchange bin/Send.pl (73) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 Declared RabbitMQ exchange.  main::_on_declare_exchange_success bin/Send.pl (91) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 Binding RabbitMQ exchange...  main::_bind_exchange bin/Send.pl (99) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 Binded RabbitMQ exchange.  main::_on_bind_exchange_success bin/Send.pl (118) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 Declaring RabbitMQ queue...  main::_declare_queue bin/Send.pl (126) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 Declared RabbitMQ queue.  main::_on_declare_queue_success bin/Send.pl (152) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:02 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5333 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): kairosDBRestUrl -> http://localhost:8080 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Starting Worker  RabbitMQ_Processer::processEmails lib/RabbitMQ/RabbitMQ_Processer.pm (22) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Connected to RabbitMQ.  RabbitMQ_Processer::_on_connect_success lib/RabbitMQ/RabbitMQ_Processer.pm (45) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Opening RabbitMQ channel...  RabbitMQ_Processer::_open_channel lib/RabbitMQ/RabbitMQ_Processer.pm (53) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Opened RabbitMQ channel.  RabbitMQ_Processer::_on_open_channel_success lib/RabbitMQ/RabbitMQ_Processer.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Declaring RabbitMQ exchange...  RabbitMQ_Processer::_declare_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (76) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Declared RabbitMQ exchange.  RabbitMQ_Processer::_on_declare_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (94) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Binding RabbitMQ exchange...  RabbitMQ_Processer::_bind_exchange lib/RabbitMQ/RabbitMQ_Processer.pm (102) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Binded RabbitMQ exchange.  RabbitMQ_Processer::_on_bind_exchange_success lib/RabbitMQ/RabbitMQ_Processer.pm (121) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Declaring RabbitMQ queue...  RabbitMQ_Processer::_declare_queue lib/RabbitMQ/RabbitMQ_Processer.pm (129) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Declared RabbitMQ queue.  RabbitMQ_Processer::_on_declare_queue_success lib/RabbitMQ/RabbitMQ_Processer.pm (155) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (158) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 End of InfluxDB Operations InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+ERROR 2016/08/05 10:33:11  Error while posting to client in KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (73) 5336 sasikumar-VirtualBox 
+ERROR 2016/08/05 10:33:11  Error Response Content : REST::Client=HASH(0xac5495c)->responseContent() KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (74) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 End of KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (78) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:33:11 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Starting Worker  main::sendEmails bin/Send.pl (19) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Connected to RabbitMQ.  main::_on_connect_success bin/Send.pl (42) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Opening RabbitMQ channel...  main::_open_channel bin/Send.pl (50) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Opened RabbitMQ channel.  main::_on_open_channel_success bin/Send.pl (64) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Declaring RabbitMQ exchange...  main::_declare_exchange bin/Send.pl (73) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Declared RabbitMQ exchange.  main::_on_declare_exchange_success bin/Send.pl (91) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Binding RabbitMQ exchange...  main::_bind_exchange bin/Send.pl (99) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Binded RabbitMQ exchange.  main::_on_bind_exchange_success bin/Send.pl (118) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Declaring RabbitMQ queue...  main::_declare_queue bin/Send.pl (126) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Declared RabbitMQ queue.  main::_on_declare_queue_success bin/Send.pl (152) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5535 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (158) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 End of InfluxDB Operations InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10  Successfully posted to client in KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 End of KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (78) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 10:35:10 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Starting Worker  main::sendEmails bin/Send.pl (19) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Connected to RabbitMQ.  main::_on_connect_success bin/Send.pl (42) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Opening RabbitMQ channel...  main::_open_channel bin/Send.pl (50) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Opened RabbitMQ channel.  main::_on_open_channel_success bin/Send.pl (64) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Declaring RabbitMQ exchange...  main::_declare_exchange bin/Send.pl (73) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Declared RabbitMQ exchange.  main::_on_declare_exchange_success bin/Send.pl (91) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Binding RabbitMQ exchange...  main::_bind_exchange bin/Send.pl (99) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Binded RabbitMQ exchange.  main::_on_bind_exchange_success bin/Send.pl (118) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Declaring RabbitMQ queue...  main::_declare_queue bin/Send.pl (126) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Declared RabbitMQ queue.  main::_on_declare_queue_success bin/Send.pl (152) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Error close Net::AMQP::Frame::Method=HASH(0x9dde230)  main::_error bin/Send.pl (177) 10248 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (158) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 End of InfluxDB Operations InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25  Successfully posted to client in KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 End of KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (78) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:33:25 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 Starting Worker  main::sendEmails bin/Send.pl (19) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 getConfigValueByKey(): rabbitMQHost -> localhost Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 getConfigValueByKey(): rabbitMQport -> 5672 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 getConfigValueByKey(): rabbitMQuser -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 getConfigValueByKey(): rabbitMQpass -> guest Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 Connected to RabbitMQ.  main::_on_connect_success bin/Send.pl (42) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 Opening RabbitMQ channel...  main::_open_channel bin/Send.pl (50) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 Opened RabbitMQ channel.  main::_on_open_channel_success bin/Send.pl (64) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 Declaring RabbitMQ exchange...  main::_declare_exchange bin/Send.pl (73) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 Declared RabbitMQ exchange.  main::_on_declare_exchange_success bin/Send.pl (91) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 Binding RabbitMQ exchange...  main::_bind_exchange bin/Send.pl (99) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 Binded RabbitMQ exchange.  main::_on_bind_exchange_success bin/Send.pl (118) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 Declaring RabbitMQ queue...  main::_declare_queue bin/Send.pl (126) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 Declared RabbitMQ queue.  main::_on_declare_queue_success bin/Send.pl (152) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 getConfigValueByKey(): rabbitMQName -> emailAlerts1 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:48 Error close Net::AMQP::Frame::Method=HASH(0xa0b7d0c)  main::_error bin/Send.pl (177) 10300 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Inside worker call-back  RabbitMQ_Processer::callback lib/RabbitMQ/RabbitMQ_Processer.pm (158) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Starting to write to InfluxDB InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (19) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDBUrl -> http://localhost:8086 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_Name -> Demo Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): influxDB_TableName -> Aug_4_2 Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 End of InfluxDB Operations InfluxDB_Operations::write lib/InfluxDB/InfluxDB_Operations.pm (79) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Starting to write to KairosDB KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (22) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Starting Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (14) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Data processing inside Json Parsing Json_Parser::json_parsing lib/Utils/Json_Parser.pm (31) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Json Parsing complete Json_Parser::json_parsing lib/Utils/Json_Parser.pm (47) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): kairosDBMetricName -> Alerts Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49  Successfully posted to client in KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 End of KairosDB Operations KairosDB_REST_Operations::addDataPoints lib/KairosDB/KairosDB_REST_Operations.pm (78) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 getConfigValueByKey(): awsS3Enable ->  Config_Reader::getConfigValueByKey lib/Utils/Config_Reader.pm (25) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
+INFO 2016/08/05 12:35:49 Successfully written to InfluxDB InfluxDB_Operations::__ANON__ lib/InfluxDB/InfluxDB_Operations.pm (67) 5336 sasikumar-VirtualBox 
